@@ -1,14 +1,14 @@
 /* Bun Gogh PWA service worker: cache-first app shell, same-origin only. */
-const BG_SW_VERSION = "bungogh-v3";
+const BG_SW_VERSION = "bungogh-v4";
 const BG_CORE = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
-  "./icons/apple-touch-icon.png",
+  "./icon-192.png",
+  "./icon-512.png",
+  "./apple-touch-icon.png",
   "./favicon-32.png",
-  "./vendor/qrcode.min.js"
+  "./qrcode.min.js"
 ];
 self.addEventListener("install", (e) => {
   e.waitUntil(

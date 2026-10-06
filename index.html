@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<link rel="manifest" href="manifest.webmanifest">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bun Gogh - Ristorante a Chiusi | Menù, Prenota, Fidelity Card</title>
@@ -13,8 +12,8 @@
 <meta name="apple-mobile-web-app-title" content="Bun Gogh">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 <style>
@@ -646,7 +645,7 @@
     <button class="btn btn-dark" id="qrModalClose" style="width:100%">Chiudi ✕</button>
   </div>
 </div>
-<script src="vendor/qrcode.min.js"></script>
+<script src="qrcode.min.js"></script>
 <script>if(typeof qrcode==="undefined"){var s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";document.head.appendChild(s);}</script>
 <script>
 /* ================= DATI ================= */
@@ -2252,7 +2251,7 @@ setInterval(()=>{
 /* ================= PWA / INSTALLAZIONE / PRIVACY ================= */
 // Versione app mostrata nel footer. REGOLA RILASCI: a ogni pubblicazione cambia
 // questo numero E la versione cache in src/pwa/sw.js (BG_SW_VERSION) insieme.
-const APP_VERSION = "1.1.1";
+const APP_VERSION = "1.1.2";
 let deferredPrompt = null;
 function isStandalone(){
   try{
@@ -2291,10 +2290,10 @@ function initPwaMeta(){
         const l=document.createElement("link"); l.rel="manifest"; l.href="manifest.webmanifest"; head.appendChild(l);
       }
       if(!head.querySelector('link[rel="apple-touch-icon"]')){
-        const a=document.createElement("link"); a.rel="apple-touch-icon"; a.href="icons/icon-180.png"; head.appendChild(a);
+        const a=document.createElement("link"); a.rel="apple-touch-icon"; a.href="apple-touch-icon.png"; head.appendChild(a);
       }
       if(!head.querySelector('link[rel="icon"]')){
-        const f=document.createElement("link"); f.rel="icon"; f.type="image/png"; f.sizes="32x32"; f.href="icons/icon-192.png"; head.appendChild(f);
+        const f=document.createElement("link"); f.rel="icon"; f.type="image/png"; f.sizes="32x32"; f.href="favicon-32.png"; head.appendChild(f);
       }
     }
   }catch(e){}
