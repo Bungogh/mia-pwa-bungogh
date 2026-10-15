@@ -1,0 +1,36 @@
+{
+  "name": "Bun Gogh - Ristorante a Chiusi",
+  "short_name": "Bun Gogh",
+  "description": "Bun Gogh Chiusi: menù, prenota tavolo, fidelity card con QR, coupon, eventi e gioco.",
+  "lang": "it",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf6ef",
+  "theme_color": "#211510",
+  "categories": [
+    "food",
+    "restaurant"
+  ],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
